@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { addTodo } from '../actions';
+import { addTodo } from '../actions/todo';
 import Form from '../components/Form';
 
 function mapDispatchToProps(dispatch) {

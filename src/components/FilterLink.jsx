@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 function FilterLink(props) {
     return (
@@ -9,9 +11,9 @@ function FilterLink(props) {
 }
 
 FilterLink.propTypes = {
-    icon: React.PropTypes.string.isRequired,
-    active: React.PropTypes.bool.isRequired,
-    onClick: React.PropTypes.func.isRequired
+    icon: PropTypes.string.isRequired,
+    active: PropTypes.bool.isRequired,
+    onClick: PropTypes.func.isRequired
 };
 
 export default FilterLink;

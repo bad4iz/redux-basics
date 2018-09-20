@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Stats(props) {
-    const total = props.todos.length;
-    const completed = props.todos.filter(todo => todo.completed).length;
+    const { todos } = props;
+
+    const total = todos.length;
+    const completed = todos.filter(todo => todo.completed).length;
     const uncompleted = total - completed;
 
     return (
